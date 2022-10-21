@@ -43,13 +43,13 @@ const generateEmployees = async () => {
     const type = answers.type;
     switch (type) {
       case `Manager`:
-        questions.push({ name: `officeNumber`, type: `input`, question: `What is the employee's office number?` });
+        questions.push({ name: `officeNumber`, type: `input`, message: `What is the employee's office number?` });
         break;
       case `Engineer`:
-        questions.push({ name: `github`, type: `input`, question: `What is the employee's github username?` });
+        questions.push({ name: `github`, type: `input`, message: `What is the employee's github username?` });
         break;
       case `Intern`:
-        questions.push({ name: `school`, type: `input`, question: `What is the employee's school?` });
+        questions.push({ name: `school`, type: `input`, message: `What is the employee's school?` });
         break;
     }
     questions.push(repeatQuestion);
@@ -79,7 +79,7 @@ const generateHTML = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-        <link rel="stylesheet" href="../src/style.css" />
+        <style>.card {min-width: 300px;}</style>
         <title>Team Profile</title>
       </head>
       <body>
