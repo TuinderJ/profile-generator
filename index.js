@@ -124,13 +124,16 @@ const generateCard = employee => {
 
   switch (employee.getRole()) {
     case `Manager`:
-      outputHTML += `\n<td>Office Number: ${employee.officeNumber}</td>`;
+      outputHTML += `
+                <td>Office Number: ${employee.officeNumber}</td>`;
       break;
     case `Engineer`:
-      outputHTML += `\n<td>GitHub: <a href="https://www.github.com/${employee.github}/">${employee.github}</a></td>`;
+      outputHTML += `
+                <td>GitHub: <a href="https://www.github.com/${employee.github}/">${employee.github}</a></td>`;
       break;
     case `Intern`:
-      outputHTML += `\n<td>School: ${employee.school}</td>`;
+      outputHTML += `
+                <td>School: ${employee.school}</td>`;
       break;
   }
 
