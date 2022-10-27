@@ -26,6 +26,7 @@ Clone or fork this repository and run 'npm i'. After that, run the command npm s
 Navigate to the folder this app was cloned to and run the command 'npm start'. Answer the questions that come up. After answering the questions, an index.html file will be created in the dist folder inside of the folder that the app is located.
 
 ![screenshot](assets/images/screenshot.png)
+[Video Walkthrough](./assets/videos/walkthrough.mp4)
 
 ## Credits
 
